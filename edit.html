@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Jungle Cook | Edit Recipe</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body data-page="edit">
+    <header>
+      <div id="brand">
+        <a href="index.html"
+          ><img class="brand-logo" src="images/logo.svg" alt="The Jungle Cook"
+        /></a>
+      </div>
+
+      <nav class="desktop-nav">
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="browse.html">Browse</a></li>
+          <li><a href="create.html">Create Recipe</a></li>
+          <li id="login"><a class="login-btn" href="login.html">Login</a></li>
+        </ul>
+      </nav>
+
+      <div
+        id="hamburger-icon"
+        aria-label="Open menu"
+        aria-expanded="false"
+        role="button"
+        tabindex="0"
+      >
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="browse.html">Browse</a></li>
+          <li><a href="create.html">Create Recipe</a></li>
+          <li><a class="pill" href="login.html">Login</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <div class="page-wrapper edit-recipe-page">
+        <div class="page-inner">
+          <h1 class="page-title">Hey Cook, edit your recipe!</h1>
+
+          <form class="edit-recipe-form" id="edit-recipe-form">
+            <div class="form-row">
+              <label for="editImage">Edit Recipe Image</label>
+              <input type="text" id="editImage" name="image" />
+            </div>
+
+            <div class="form-row">
+              <label for="editName">Recipe Name</label>
+              <input type="text" id="editName" name="name" required />
+            </div>
+
+            <div class="form-row">
+              <label for="editDesc">Recipe Description</label>
+              <textarea id="editDesc" name="description" required></textarea>
+            </div>
+
+            <div class="form-row inline-fields">
+              <div>
+                <label for="editTime">Total Time</label>
+                <input type="text" id="editTime" name="time" required />
+              </div>
+              <div>
+                <label for="editServings">Servings</label>
+                <input
+                  type="number"
+                  id="editServings"
+                  name="servings"
+                  min="1"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <label>Edit Ingredients:</label>
+              <div class="dynamic-group" id="edit-ingredients"></div>
+              <button type="button" class="add-ingredient-btn">+</button>
+            </div>
+
+            <div class="form-row">
+              <label>Edit Instructions:</label>
+              <div class="dynamic-group" id="edit-instructions"></div>
+              <button type="button" class="add-instruction-btn">+</button>
+            </div>
+
+            <button type="submit" class="btn save-changes-btn">
+              Submit Changes
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer>…</footer>
+
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/jungleCook.js"></script>
+  </body>
+</html>
