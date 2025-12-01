@@ -1,3 +1,11 @@
+https://in-info-web4.luddy.indianapolis.iu.edu/~syfagan/my-app/
+https://console.firebase.google.com/project/class-setup-3ac76/overview
+Users are able to explore the junglecook site to its fullest potential.
+Users can create accounts allowing them to login and out at any given time.
+Now users can browse, create, edit, and view their very own recipes!.
+
+
+
 # tinyglobby
 
 [![npm version](https://img.shields.io/npm/v/tinyglobby.svg?maxAge=3600)](https://npmjs.com/package/tinyglobby)
